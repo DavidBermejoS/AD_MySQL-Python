@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 04-03-2019 a las 14:49:50
+-- Tiempo de generación: 04-03-2019 a las 15:44:25
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 7.2.10
 
@@ -53,9 +53,9 @@ INSERT INTO `almacen1` (`codigo`, `cantidad`, `descripcion`) VALUES
 ('A0012', '7', 'Estuche reparacion d'),
 ('A0013', '5', 'Guardabarros trasero'),
 ('A0014', '6', 'Sillín con amortigua'),
-('A0015', '0', 'Sillin basico'),
-('A0016', '0', 'Cuadro de BMX con ma'),
-('A0017', '1', 'Ruedas pequeñas');
+('A0015', '1', 'Sillin basico'),
+('A0016', '1', 'Cuadro de BMX con ma'),
+('A0017', '3', 'Ruedas pequeñas');
 
 -- --------------------------------------------------------
 
@@ -117,15 +117,17 @@ CREATE TABLE `movimientos` (
   `cod_movimiento` double NOT NULL,
   `fecha` date DEFAULT NULL,
   `c2` varchar(10) COLLATE latin1_spanish_ci DEFAULT NULL,
-  `cantidad` decimal(10,0) DEFAULT NULL
+  `cantidad` decimal(10,0) DEFAULT NULL,
+  `nota` varchar(20) COLLATE latin1_spanish_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `movimientos`
 --
 
-INSERT INTO `movimientos` (`cod_movimiento`, `fecha`, `c2`, `cantidad`) VALUES
-(1, '2019-03-04', 'B0003', '1');
+INSERT INTO `movimientos` (`cod_movimiento`, `fecha`, `c2`, `cantidad`, `nota`) VALUES
+(1, '2019-03-04', 'B0003', '1', NULL),
+(2, '2019-03-04', 'B0003', '-1', 'Arreglo movimiento B');
 
 --
 -- Índices para tablas volcadas
@@ -165,7 +167,7 @@ ALTER TABLE `movimientos`
 -- AUTO_INCREMENT de la tabla `movimientos`
 --
 ALTER TABLE `movimientos`
-  MODIFY `cod_movimiento` double NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `cod_movimiento` double NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas

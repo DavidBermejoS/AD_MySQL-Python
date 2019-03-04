@@ -55,7 +55,8 @@ class Interfaz:
                 print("INSERTANDO NUEVO MOVIMIENTO")
                 dbInsert.insertar_movimiento(dbInsert)
             if selector == '2':
-                print("Opcion 2")
+                print("ANULANDO MOVIMIENTO")
+                dbInsert.anular_movimiento(dbInsert)
             if selector == '3':
                 print("INSERTANDO MATERIALES EN EL ALMACEN 1")
                 dbInsert.insertar_almacen1(dbInsert)
