@@ -16,6 +16,9 @@ Proyecto de Manejo de Base de datos mediante Python
   - Añadido Paquete de vista.
     - Clase Interfaz Principal: se encargará de mostrar por consola un menú para la gestión 
     de flujo de las acciones del usuario.
+  - Añadido Paquete de controlador:
+    - Clase DBInserts: clase encargada de recoger los métodos de inserción de registros en la base de datos
+    - Clase DBQuery: clase encargada de recoger los métodos de consulta de registros de la base de datos.
 
 
 
