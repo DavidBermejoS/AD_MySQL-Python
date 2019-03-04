@@ -27,3 +27,8 @@ Proyecto de Manejo de Base de datos mediante Python
    - Refactorización de clases.
    - Agregado fichero ddl y dml de la base de datos.
    - Agregado fichero exportado de la base de datos.
+   
+- v0.4.0:
+   - Implementada funcionalidad de anulación de movimiento 
+   - Refactorización de clases Movimientos y metodos de la clase DBInserts e InterfazPrincipal
+   - Agregado fichero exportado de la base de datos.
