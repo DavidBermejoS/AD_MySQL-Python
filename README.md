@@ -22,3 +22,8 @@ Proyecto de Manejo de Base de datos mediante Python
 
 
 
+- v0.3.0:
+   - Implementada funcionalidad de movimiento de almacen de materiales a almacén de producción.
+   - Refactorización de clases.
+   - Agregado fichero ddl y dml de la base de datos.
+   - Agregado fichero exportado de la base de datos.

@@ -53,7 +53,7 @@ class Interfaz:
             selector = input()
             if selector == '1':
                 print("INSERTANDO NUEVO MOVIMIENTO")
-                dbInsert.insertar_movimiento()
+                dbInsert.insertar_movimiento(dbInsert)
             if selector == '2':
                 print("Opcion 2")
             if selector == '3':
@@ -67,6 +67,5 @@ class Interfaz:
                 break;
 
 
-
-aux= Interfaz()
+aux = Interfaz()
 aux.interfaz_main()
