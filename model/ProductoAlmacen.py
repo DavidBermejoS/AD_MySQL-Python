@@ -27,5 +27,11 @@ class ProductoAlmacen:
     def set_descripcion(self, descripcion):
         self.descripcion = descripcion
 
+    def get_codigo(self):
+        return self.codigo
+
+    def get_cantidad(self):
+        return self.cantidad
+
     def __str__(self):
         return f"PRODUCTO\n\t Codigo: {self.codigo}\n\t Descripcion: {self.descripcion}\n\t Cantidad: {self.cantidad} "

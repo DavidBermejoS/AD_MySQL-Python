@@ -7,7 +7,7 @@ CONSULTAS CON LA BASE DE DATOS
 :autor David Bermejo Simon
 """
 import mysql.connector
-from ProductoAlmacen import ProductoAlmacen
+from model.ProductoAlmacen import ProductoAlmacen
 """   
 La conexion a la base de datos la realizaremos así:
     
@@ -22,7 +22,7 @@ db = mysql.connector.connect(
 
 class DBQuery:
     
-    def ver_todo_almacen1():
+    def ver_todo_almacen1(self):
         db = mysql.connector.connect(
                 host="localhost",
                 database="db_sge",
@@ -46,7 +46,7 @@ class DBQuery:
 
 
 
-    def ver_cod_almacen1():
+    def ver_cod_almacen1(self):
         db = mysql.connector.connect(
                 host="localhost",
                 database="db_sge",
@@ -73,7 +73,7 @@ class DBQuery:
             db.rollback()
         db.close()
         
-    def ver_todo_almacen2():
+    def ver_todo_almacen2(self):
         db = mysql.connector.connect(
                 host="localhost",
                 database="db_sge",
@@ -97,7 +97,7 @@ class DBQuery:
 
 
 
-    def ver_cod_almacen2():
+    def ver_cod_almacen2(self):
         db = mysql.connector.connect(
                 host="localhost",
                 database="db_sge",
